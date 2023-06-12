@@ -1,5 +1,9 @@
 package com.gridnine.testing;
 
+import com.gridnine.testing.filter.FlightFilter;
+import com.gridnine.testing.filter.impl.FlightFilterImpl;
+import com.gridnine.testing.flight.Flight;
+
 import java.time.LocalTime;
 import java.util.List;
 
@@ -22,7 +26,7 @@ public class Main {
         flights2.forEach(System.out::println);
         System.out.println("______________________________________________________________________");
 
-        System.out.println("Список полетов где общее время, проведённое на земле превышает два часа");
+        System.out.println("Список полетов где общее время проведённое на земле превышает два часа");
         List<Flight> flights3 = flightFilter.timeBetweenSegmentsIsMoreThan(LocalTime.of(2, 0));
         flights3.forEach(System.out::println);
     }

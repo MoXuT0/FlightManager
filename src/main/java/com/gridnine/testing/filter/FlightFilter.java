@@ -1,4 +1,6 @@
-package com.gridnine.testing;
+package com.gridnine.testing.filter;
+
+import com.gridnine.testing.flight.Flight;
 
 import java.time.LocalTime;
 import java.util.List;
